@@ -1,0 +1,71 @@
+.formacao {
+  max-width: 1000px;
+  margin: 80px auto;
+  background: #3d3d3d;
+  border-radius: 4px;
+}
+
+.formacao-container {
+  padding: 40px 20px;
+  position: relative;
+}
+
+.formacao-subtitulo {
+  font-size: 2.5rem;
+  color: #525252;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.formacao-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+}
+
+.formacao-item {
+  max-width: 360px;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.curso {
+  background: #141414;
+}
+
+.certificados {
+  background: #525252;
+}
+
+.formacao-certificados {
+  position: relative;
+}
+
+.titulo-certificados {
+  position: absolute;
+  top: -40px;
+  font-size: 1.2rem;
+}
+
+.formacao-container::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 80px;
+  background: #525252;
+  left: 499px;
+  bottom: 40px;
+}
+
+@media (max-width: 1100px) {
+  .formacao-container::after {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .titulo-certificados {
+    display: none;
+  }
+}
