@@ -26,6 +26,10 @@
   border-radius: 4px;
 }
 
+.header-lista a:hover {
+  background: #141414;
+}
+
 @media (max-width: 900px) {
   .header {
     display: flex;
